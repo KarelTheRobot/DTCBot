@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>NetBadge</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://shibidp.its.virginia.edu/idp/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://shibidp.its.virginia.edu/idp/css/netbadge.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+// Function To Display Popup
+      function div_show() {
+         document.getElementById("loginError2").innerHTML = "<br>An error occurred. Please try your username and password <br><br>&nbsp;";
+         //document.getElementById("username").focus();
+      }
+      function checkPassField() {
+         if ((document.getElementById("user").value == null) || (document.getElementById("user").value.trim() == "")) {
+          document.getElementById("loginError").innerHTML = 'Error: You cannot leave the<br>"UVa computing ID" field blank.';
+          return false;
+         }
+         if ((document.getElementById("pass").value == null) || (document.getElementById("pass").value.trim() == "")) {
+          document.getElementById("loginError").innerHTML = 'Error: You cannot leave the "Password" field blank.';
+          return false;
+         }
+      }
+   </script>
+</link></head>
+<body>
+<!-- Header -->
+<header class="container-fluid p-none">
+<div class="bg-secondary">
+<div class="container">
+<div class="wrapper-3 p-r-md">
+<div class="push-right">
+<a href="http://www.virginia.edu/">
+<img alt="UVA logo" class="logo" src="https://shibidp.its.virginia.edu/idp/images/uva-white-logo.png"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary white">
+<div class="container">
+<div class="wrapper-md">
+<h1>NetBadge</h1>
+<h2 class="h3 hidden-sm-down">Your first authentication step when logging in to UVA systems</h2>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="container wrapper-md">
+<!-- Column 1 -->
+<div class="col-md-6">
+<fieldset class="b-black">
+<legend>Option 1:</legend>
+<h3>Log in with your <strong>Digital Certificate</strong>.</h3>
+<p class="hidden-sm-down">
+                A digital ID card that resides on your computer.
+
+                <a href="https://in.virginia.edu/installcert" tabindex="0">Get one now!</a>
+</p>
+<form action="" method="post" onsubmit="div_show(); return false;">
+<input aria-label="Log in with your digital certificate" class="button" id="certLogin" name="_eventId_UseCert" type="submit" value="Log In"/>
+<input id="csrf_token" name="csrf_token" type="hidden" value="IjBlODYwOTdkMmJjMTkxZDdjNzQ0MGFkMmRjNDlhNGQ1NzgxZWE4M2Mi.YlkD2A.5js-Gfk_V0ZyqKGNHt5J0ZgrEx4"/></form>
+<div id="loginError2" style="font-size: 12.8px; color:#900; font-weight:bold;"> </div>
+</fieldset>
+</div>
+<!-- Column 2 -->
+<div class="col-md-6">
+<fieldset class="b-gray">
+<legend>Option 2:</legend>
+<h3 class="hidden-sm-down">Log in with your <strong>UVA computing ID and password.</strong></h3>
+<div id="loginError" style="font-size: 12.8px; color:#900; font-weight:bold;"> </div>
+<form action="" method="post" onsubmit="return checkPassField();">
+<p>
+<label for="user">UVA computing ID</label><br/>
+<input id="user" name="username" size="20" type="text" value=""/>
+</p>
+<p>
+<label for="pass">Password</label><br/>
+<input id="pass" name="j_password" size="20" type="password"/>
+<br/>
+<span><a class="small" href="https://in.virginia.edu/uvalogin">Forgot your password or computing ID?</a></span>
+</p>
+<input aria-label="Log in with your computing ID and password" class="button bg-white" name="_eventId_proceed" type="submit" value="Log In"/>
+<input id="csrf_token" name="csrf_token" type="hidden" value="IjBlODYwOTdkMmJjMTkxZDdjNzQ0MGFkMmRjNDlhNGQ1NzgxZWE4M2Mi.YlkD2A.5js-Gfk_V0ZyqKGNHt5J0ZgrEx4"/></form>
+</fieldset>
+</div>
+</main>
+<!-- Footer -->
+<footer class="container">
+<div class="row">
+<hr/>
+<div class="col-md-12">
+<p>
+                    You are attempting to sign in to a service run by the University of Virginia,
+                    for authorized use only. All use of this system is subject to the policies,
+                    standards, &amp; procedures detailed in the
+                    <a href="http://security.virginia.edu/information-policy">UVA Information Policy Library</a>.
+                    By using the University's systems, you acknowledge and consent to these terms.
+                </p>
+<p><a href="https://virginia.service-now.com/its?id=itsweb_kb_article&amp;sys_id=4f98738bdbf6c744f032f1f51d9619ed">About NetBadge</a></p>
+<p>
+                    ©
+                    <script type="text/javascript">
+                        document.write((new Date()).getFullYear())
+                    </script>
+                    by the Rector and Visitors of the <a href="http://www.virginia.edu/">University of Virginia</a>
+</p>
+<img height="1" src="https://bit.ly/2My55Bc" width="1"/>
+</div>
+</div>
+</footer>
+</body>
+</html>

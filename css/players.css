@@ -1,0 +1,49 @@
+#main_div {
+    margin: 50px;
+}
+
+.team-1-icon, .team-1-icon:hover {
+    color: #8d98d8;
+}
+
+.team-2-icon, .team-2-icon:hover {
+    color: #a96bb4;
+}
+
+.team-3-icon, .team-3-icon:hover {
+    color: #ffb59b;
+}
+
+.team-4-icon, .team-4-icon:hover {
+    color: #f8e464;
+}
+
+.team-5-icon, .team-5-icon:hover {
+    color: #00ffe0;
+}
+
+.team-6-icon, .team-6-icon:hover {
+    color: #aed391;
+}
+
+.team-icon {
+    font-weight: bold;
+}
+
+.player_link {
+    color: black;
+}
+
+.player_link:hover {
+    color: black;
+}
+
+#button_div {
+    position: absolute;
+    display: flex;
+    left: 50%;
+}
+
+#add_player{
+    transform: translate(-50%, 0);
+}

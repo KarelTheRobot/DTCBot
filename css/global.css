@@ -1,0 +1,33 @@
+#team1dropdown:hover {
+    background-color: #8d98d8;
+    color: white;
+}
+
+#team2dropdown:hover {
+    background-color: #a96bb4;
+    color: white;
+}
+
+#team3dropdown:hover {
+    background-color: #ffb59b;
+}
+
+#team4dropdown:hover {
+    background-color: #f8e464;
+}
+
+#team5dropdown:hover {
+    background-color: #00ffe0;
+}
+
+#team6dropdown:hover {
+    background-color: #aed391;
+}
+
+#navbar_header {
+    font-size: 25pt;
+}
+
+.navbar_subheader {
+    font-size: 15pt;
+}
