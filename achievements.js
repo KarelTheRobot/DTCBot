@@ -7,10 +7,10 @@ const readline = require('readline');
 const { google } = require('googleapis');
 const gal = require('google-auth-library');
 const auth = new gal.GoogleAuth({
-	keyFile: "sheets_credentials.json",
+	keyFile: "dtc2-7d395-ada3322239f3.json",
 	scopes: "https://www.googleapis.com/auth/spreadsheets"
 })
-const privateKey = require('./dtc2-7d395-fbd0fb847adf.json');
+//const privateKey = require('./dtc2-7d395-fbd0fb847adf.json');
 const spreadsheetId = '1BrCj-zLZ5XrHGQuz4YRHXqeE6xRdlsiuf0gU62GdzGU';
 const sheetName = 'Achievements';
 const { MessageMentions: { USERS_PATTERN } } = require('discord.js');
@@ -204,7 +204,8 @@ achievements = {
 	85: ["Complete a 1014-piece jigsaw puzzle region with at least one person on another team.", 0, 400],
 	86: ["Win a game of 9-ball without your opponent taking a turn.", 0, 100],
 	87: ["Any of your stats have “69”, “6/9” “6.9” etc.", 0, 69],
-	88: ["Create some form of art in a hex game (practice or official), and describe how it makes you feel.", 0, 50]
+	88: ["Create some form of art in a hex game (practice or official), and describe how it makes you feel.", 0, 50],
+	89: ["Share your favorite memory from team comps!", 0, 23.14159]
 }
 
 teams = {
